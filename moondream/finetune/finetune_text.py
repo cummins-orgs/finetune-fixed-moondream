@@ -4,7 +4,7 @@ from torch.utils.data import Dataset
 import math
 from safetensors.torch import save_file
 import sys
-print sys.path 
+print (sys.path )
 from tqdm import tqdm
 from datasets import load_dataset
 from bitsandbytes.optim import AdamW8bit
