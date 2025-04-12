@@ -9,13 +9,13 @@ from datasets import load_dataset
 from bitsandbytes.optim import AdamW8bit
 import wandb
 
-from ..torch.weights import load_weights_into_model
-from ..torch.moondream import MoondreamModel, MoondreamConfig, text_encoder
-from ..torch.text import _produce_hidden, _lm_head, TextConfig
+from moondream.torch.weights import load_weights_into_model
+from moondream.torch.moondream import MoondreamModel, MoondreamConfig, text_encoder
+from moondream.torch.text import _produce_hidden, _lm_head, TextConfig
 
 # This is a intended to be a basic starting point for fine-tuning the text encoder.
 # Your optimal hyperparams and data may be different.
-MODEL_PATH = ""
+MODEL_PATH = "../../model.safetensors"
 # Your data should end with the eos token. Here is the textual representation.
 ANSWER_EOS = "<|endoftext|>"
 LR = 3e-6
