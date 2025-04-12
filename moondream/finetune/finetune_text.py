@@ -106,7 +106,9 @@ def main():
 
     i = 0
     for epoch in range(EPOCHS):
+        print("new epoch")
         for sample in dataset:
+            print ("running a sample")
             i += 1
             with torch.no_grad():
                 img_emb = model._run_vision_encoder(sample["image"])
