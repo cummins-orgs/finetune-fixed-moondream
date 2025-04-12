@@ -16,7 +16,7 @@ from ..moondream_torch.text import _produce_hidden, _lm_head, TextConfig
 
 # This is a intended to be a basic starting point for fine-tuning the text encoder.
 # Your optimal hyperparams and data may be different.
-MODEL_PATH = "../../../model.safetensors"
+MODEL_PATH = "../model.safetensors"
 # Your data should end with the eos token. Here is the textual representation.
 ANSWER_EOS = "<|endoftext|>"
 LR = 3e-6
