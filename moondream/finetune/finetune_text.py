@@ -9,7 +9,7 @@ from tqdm import tqdm
 from datasets import load_dataset
 from bitsandbytes.optim import AdamW8bit
 import wandb
-sys.path.append 'moondream'
+sys.path.append('moondream')
 from moondream.moondream_torch.weights import load_weights_into_model
 from moondream.moondream_torch.moondream import MoondreamModel, MoondreamConfig, text_encoder
 from moondream.moondream_torch.text import _produce_hidden, _lm_head, TextConfig
