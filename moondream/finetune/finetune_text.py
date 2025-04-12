@@ -10,9 +10,9 @@ from datasets import load_dataset
 from bitsandbytes.optim import AdamW8bit
 import wandb
 sys.path.append('moondream')
-from moondream.moondream_torch.weights import load_weights_into_model
-from moondream.moondream_torch.moondream import MoondreamModel, MoondreamConfig, text_encoder
-from moondream.moondream_torch.text import _produce_hidden, _lm_head, TextConfig
+from ..moondream_torch.weights import load_weights_into_model
+from ..moondream_torch.moondream import MoondreamModel, MoondreamConfig, text_encoder
+from ..moondream_torch.text import _produce_hidden, _lm_head, TextConfig
 
 # This is a intended to be a basic starting point for fine-tuning the text encoder.
 # Your optimal hyperparams and data may be different.
